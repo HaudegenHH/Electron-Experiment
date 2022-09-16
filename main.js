@@ -1,6 +1,12 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu } = require('electron')
 const path = require('path')
 
+const { menuItemsTemplate } = require('./src/menu.js')
+
+const isMac = process.platform === 'darwin'
+
+const menu = Menu.buildFromTemplate(menuItemsTemplate)
+Menu.setApplicationMenu(menu)
 
 const createWindow = () => {
   const win = new BrowserWindow({
