@@ -35,7 +35,8 @@ exports.menuItemsTemplate = [
         click: async () => {
           const win = new BrowserWindow({
             width: 500,
-            height: 200
+            height: 200,
+            backgroundColor: "#0757d9",            
           })
           win.loadFile('secondWindow.html') 
         }
