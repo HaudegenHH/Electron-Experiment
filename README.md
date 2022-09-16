@@ -4,8 +4,10 @@ Scaffold project
 
 Initialize package.json:
 > npm init -y
+
 Install electron as devDependency
 >npm install --save-dev electron
+
 Run app
 >npm run start
 
