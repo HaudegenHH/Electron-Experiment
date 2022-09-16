@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Camera</title>
+  </head>
+  <body>
+    <div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center">
+      <h1>Camera Window</h1>
+      <video id="camera" width="500" height="400" autoplay></video>
+      <img id="image" alt="">
+      <button id="capture-img">Capture Image</button>    
+    </div>
+
+    <script src="./src/camera.js"></script>
+  </body> 
+</html>
